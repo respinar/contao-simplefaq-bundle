@@ -11,7 +11,7 @@ use Contao\CoreBundle\Twig\FragmentTemplate;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-#[AsContentElement(category: 'simplefaq', template:'simplefaq_item')]
+#[AsContentElement(category: 'simplefaq')]
 class SimplefaqItemController extends AbstractContentElementController
 {
 
