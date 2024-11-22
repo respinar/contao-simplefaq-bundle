@@ -12,7 +12,7 @@ use Contao\StringUtil;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-#[AsContentElement(category: 'simplefaq', template:'simplefaq_start')]
+#[AsContentElement(category: 'simplefaq')]
 class SimplefaqStartController extends AbstractContentElementController
 {
 
