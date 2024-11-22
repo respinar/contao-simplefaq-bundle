@@ -36,7 +36,7 @@ class SimplefaqItemController extends AbstractContentElementController
 
         $template->set('question', $model->simplefaq_question);
         $template->set('answer', $model->simplefaq_answer);
-
+        
         return $template->getResponse();
     }
 }
