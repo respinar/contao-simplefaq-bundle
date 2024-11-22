@@ -20,14 +20,6 @@ class SimplefaqStartController extends AbstractContentElementController
 
     protected function getResponse(FragmentTemplate $template, ContentModel $model, Request $request): Response
     {  
-
-        // Deserialize the headline field
-        $headline = StringUtil::deserialize($model->headline, true);
-
-        // Pass both the headline text and level (hl) to the template
-        $template->set('headline', $headline['value'] ?? '');
-        $template->set('hl', $headline['unit'] ?? 'h2'); // Default to <h2>
-
         // Backend Preview
         if ($request->attributes->get('_scope') === 'backend') {
             return new Response('<div style="padding: 10px; background: #eee; border: 1px solid #ccc;"><'.$headline['unit'].'>'.$headline['value'].'</'.$headline['unit'].'> FAQ START:</div>');
