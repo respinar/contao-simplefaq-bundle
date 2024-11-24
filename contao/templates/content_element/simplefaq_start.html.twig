@@ -1,9 +1,12 @@
-{# {% extends "@Contao/content_element/_base.html.twig" %} #}
+{% set attributes = attrs(attributes|default)
+    .setIfExists('id', element_html_id)
+    .addClass([element_css_classes, "content-simplefaq"])
+%}
 
-{# {% block content %} #}
-    <div class="faq-container">
-        {% if headline %}
-            <{{ hl }} class="faq-title">{{ headline }}</{{ hl }}>            
-        {% endif %}
-        <div class="faq-items">
-{# {% endblock %} #}
+<div {% block attributes %}{{ attributes }}{% endblock %}>
+    {% if headline.text %}
+        <{{ headline.tag_name }} class="simplefaq__title">
+            {{ headline.text|insert_tag_raw }}
+        </{{ headline.tag_name }}>
+    {% endif %}          
+    <div class="simplefaq__items">
