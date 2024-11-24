@@ -1,8 +1,10 @@
-{# {% extends "@Contao/content_element/_base.html.twig" %} #}
+{% set attributes = attrs(attributes|default)
+    .setIfExists('id', element_html_id)
+    .addClass([element_css_classes, "simplefaq__item"])
+    .set('open')
+%}
 
-{# {% block content %} #}
-    <div class="faq-item">
-        <div class="faq-question">{{ question|raw }}</div>
-        <div class="faq-answer">{{ answer|raw }}</div>
-    </div>
-{# {% endblock %} #}
+<details {% block attributes %}{{ attributes }}{% endblock %}>
+    <summary class="simplefaq__question">{{ question|csp_inline_styles|insert_tag|encode_email|raw }}</summary>
+    <div class="simplefaq__answer">{{ answer|csp_inline_styles|insert_tag|encode_email|raw }}</div>
+</details>
