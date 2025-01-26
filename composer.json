@@ -1,0 +1,51 @@
+{
+    "name": "respinar/contao-faq-element",
+    "description": "FAQ element for Contao",
+    "keywords": ["contao", "faq"],
+    "type": "contao-bundle",
+    "homepage": "https://respinar.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hamid Peywasti",
+            "email": "hamid@respinar.com",
+            "homepage": "https://respinar.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/respinar/contao-faq-element/issues",
+        "source": "https://github.com/respinar/contao-faq-element"
+    },
+    "require": {
+        "php": "^8.0",
+        "contao/core-bundle":"^4.13 || ^5.3"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "Respinar\\FaqElementBundle\\": "src/"
+        },
+        "classmap": [
+            "contao/"
+        ],
+        "exclude-from-classmap": [
+            "contao/config/",
+            "contao/dca/",
+            "contao/languages/",
+            "contao/templates/"
+        ]
+    },
+    "config": {
+        "allow-plugins": {
+            "contao-components/installer": false,
+            "contao/manager-plugin": false,
+            "contao-community-alliance/composer-plugin": true
+        }
+    },
+    "extra": {
+        "contao-manager-plugin": "Respinar\\BxsliderBundle\\ContaoManager\\Plugin"
+    }
+}
