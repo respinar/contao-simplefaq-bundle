@@ -46,6 +46,6 @@
         }
     },
     "extra": {
-        "contao-manager-plugin": "Respinar\\BxsliderBundle\\ContaoManager\\Plugin"
+        "contao-manager-plugin": "Respinar\\SimpleFaqBundle\\ContaoManager\\Plugin"
     }
 }
