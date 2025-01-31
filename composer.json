@@ -14,8 +14,8 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/respinar/contao-faq-element/issues",
-        "source": "https://github.com/respinar/contao-faq-element"
+        "issues": "https://github.com/respinar/contao-simple-faq/issues",
+        "source": "https://github.com/respinar/contao-simple-faq"
     },
     "require": {
         "php": "^8.0",
