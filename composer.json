@@ -1,5 +1,5 @@
 {
-    "name": "respinar/contao-faq-element",
+    "name": "respinar/contao-simple-faq",
     "description": "FAQ element for Contao",
     "keywords": ["contao", "faq"],
     "type": "contao-bundle",
