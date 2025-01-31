@@ -1,5 +1,5 @@
 {
-    "name": "respinar/contao-faq-element",
+    "name": "respinar/contao-simple-faq",
     "description": "FAQ element for Contao",
     "keywords": ["contao", "faq"],
     "type": "contao-bundle",
@@ -14,8 +14,8 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/respinar/contao-simple-faq/issues",
-        "source": "https://github.com/respinar/contao-simple-faq"
+        "issues": "https://github.com/respinar/contao-faq-element/issues",
+        "source": "https://github.com/respinar/contao-faq-element"
     },
     "require": {
         "php": "^8.0",
@@ -26,7 +26,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Respinar\\FaqElementBundle\\": "src/"
+            "Respinar\\SimpleFaqBundle\\": "src/"
         },
         "classmap": [
             "contao/"
