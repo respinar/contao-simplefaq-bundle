@@ -10,20 +10,23 @@ declare(strict_types=1);
  * @license MIT
  */
 
-namespace Respinar\SimpleFaqBundle\ContaoManager;
+namespace Respinar\ContaoSimplefaqBundle\ContaoManager;
 
 use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
-use Respinar\SimpleFaqBundle\RespinarSimpleFaqBundle;
+use Symfony\Component\Config\Loader\LoaderResolverInterface;
+use Symfony\Component\HttpKernel\KernelInterface;
+use Symfony\Component\Routing\RouteCollection;
+use Respinar\ContaoSimplefaqBundle\ContaoSimplefaqBundle;
 
 class Plugin implements BundlePluginInterface
 {
     public function getBundles(ParserInterface $parser): array
     {
         return [
-            BundleConfig::create(RespinarSimpleFaqBundle::class)
+            BundleConfig::create(ContaoSimplefaqBundle::class)
                 ->setLoadAfter([ContaoCoreBundle::class]),
         ];
     }
