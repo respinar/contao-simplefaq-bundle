@@ -1,5 +1,5 @@
 {
-    "name": "respinar/contao-simple-faq",
+    "name": "respinar/contao-simplefaq-bundle",
     "description": "FAQ element for Contao",
     "keywords": ["contao", "faq"],
     "type": "contao-bundle",
@@ -14,38 +14,22 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/respinar/contao-simple-faq/issues",
-        "source": "https://github.com/respinar/contao-simple-faq"
+        "issues": "https://github.com/respinar/contao-simplefaq-bundle/issues",
+        "source": "https://github.com/respinar/contao-simplefaq-bundle"
     },
     "require": {
-        "php": "^8.0",
-        "contao/core-bundle":"^4.13 || ^5.3"
+        "php": "^8.2",
+        "contao/core-bundle":"^5.3"
     },
     "require-dev": {
         "contao/manager-plugin": "^2.12"
     },
     "autoload": {
         "psr-4": {
-            "Respinar\\SimpleFaqBundle\\": "src/"
-        },
-        "classmap": [
-            "contao/"
-        ],
-        "exclude-from-classmap": [
-            "contao/config/",
-            "contao/dca/",
-            "contao/languages/",
-            "contao/templates/"
-        ]
-    },
-    "config": {
-        "allow-plugins": {
-            "contao-components/installer": false,
-            "contao/manager-plugin": false,
-            "contao-community-alliance/composer-plugin": true
+            "Respinar\\ContaoSimplefaqBundle\\": "src/"
         }
-    },
+    },    
     "extra": {
-        "contao-manager-plugin": "Respinar\\SimpleFaqBundle\\ContaoManager\\Plugin"
+        "contao-manager-plugin": "Respinar\\ContaoSimplefaqBundle\\ContaoManager\\Plugin"
     }
 }
