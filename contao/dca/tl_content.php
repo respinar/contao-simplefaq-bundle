@@ -1,0 +1,53 @@
+<?php
+
+declare(strict_types=1);
+
+use Respinar\ContaoSimplefaqBundle\Controller\ContentElement\SimplefaqItemController;
+use Respinar\ContaoSimplefaqBundle\Controller\ContentElement\SimplefaqStartController;
+use Respinar\ContaoSimplefaqBundle\Controller\ContentElement\SimplefaqStopController;
+
+/**
+ * Modify the DCA for FAQ list
+ */
+// FAQ Wrapper (Start)
+$GLOBALS['TL_DCA']['tl_content']['palettes'][SimplefaqStartController::TYPE] = '
+    {type_legend},type,headline;
+    {template_legend:hide},customTpl;
+    {protected_legend:hide},protected;
+    {expert_legend:hide},cssID;
+    {invisible_legend:hide},invisible,start,stop
+';
+
+// FAQ Item
+$GLOBALS['TL_DCA']['tl_content']['palettes'][SimplefaqItemController::TYPE] = '
+    {type_legend},type;
+    {faq_legend},simplefaq_question,simplefaq_answer;
+    {template_legend:hide},customTpl;
+    {protected_legend:hide},protected;
+    {expert_legend:hide},cssID;
+    {invisible_legend:hide},invisible,start,stop
+';
+
+// FAQ Wrapper (Stop)
+$GLOBALS['TL_DCA']['tl_content']['palettes'][SimplefaqStopController::TYPE] = '
+    {type_legend},type;
+    {template_legend:hide},customTpl;
+    {protected_legend:hide},protected;
+    {expert_legend:hide},cssID;
+    {invisible_legend:hide},invisible,start,stop
+';
+
+// Fields
+$GLOBALS['TL_DCA']['tl_content']['fields']['simplefaq_question'] = [
+    'label'     => ['Question', 'Enter the question'],
+    'inputType' => 'text',
+    'eval'      => ['mandatory' => true, 'tl_class' => 'w50'],
+    'sql'       => "varchar(255) NOT NULL default ''"
+];
+
+$GLOBALS['TL_DCA']['tl_content']['fields']['simplefaq_answer'] = [
+    'label'     => ['Answer', 'Enter the answer'],
+    'inputType' => 'textarea',
+    'eval'      => ['mandatory' => true, 'tl_class' => 'clr'],
+    'sql'       => "text NULL"
+];
