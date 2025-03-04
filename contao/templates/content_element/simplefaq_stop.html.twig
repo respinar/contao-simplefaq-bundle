@@ -1,0 +1,11 @@
+{% extends "@Contao/content_element/_base.html.twig" %}
+
+{% block content %}
+        </div>
+    </div>   
+{% endblock %}
+
+{# Add metadata #}
+{% if schemaOrgData %}
+    {% do add_schema_org(schemaOrgData) %}
+{% endif %}
