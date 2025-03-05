@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="tl_content">
+        <body>
+            <!-- CTE Category -->
+            <trans-unit id="CTE.simplefaq">
+                <source>Simple FAQ</source>
+            </trans-unit>
+
+            <!-- CTE Labels -->
+            <trans-unit id="CTE.simplefaq_start.0">
+                <source>FAQ Wrapper (Start)</source>
+            </trans-unit>
+            <trans-unit id="CTE.simplefaq_start.1">
+                <source>Start of an FAQ section</source>
+            </trans-unit>
+            <trans-unit id="CTE.simplefaq_item.0">
+                <source>FAQ Item</source>
+            </trans-unit>
+            <trans-unit id="CTE.simplefaq_item.1">
+                <source>A single FAQ question and answer</source>
+            </trans-unit>
+            <trans-unit id="CTE.simplefaq_stop.0">
+                <source>FAQ Wrapper (Stop)</source>
+            </trans-unit>
+            <trans-unit id="CTE.simplefaq_stop.1">
+                <source>End of an FAQ section</source>
+            </trans-unit>
+
+            <!-- Legend -->
+            <trans-unit id="tl_content.simplefaq_legend">
+                <source>Simple FAQ</source>
+            </trans-unit>
+
+            <!-- Specific Fields (included as required) -->
+            <trans-unit id="tl_content.simplefaq_question.0">
+                <source>Question</source>
+            </trans-unit>
+            <trans-unit id="tl_content.simplefaq_question.1">
+                <source>Enter the question</source>
+            </trans-unit>
+            <trans-unit id="tl_content.simplefaq_answer.0">
+                <source>Answer</source>
+            </trans-unit>
+            <trans-unit id="tl_content.simplefaq_answer.1">
+                <source>Enter the answer</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
