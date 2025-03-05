@@ -21,7 +21,7 @@ $GLOBALS['TL_DCA']['tl_content']['palettes'][SimplefaqStartController::TYPE] = '
 // FAQ Item
 $GLOBALS['TL_DCA']['tl_content']['palettes'][SimplefaqItemController::TYPE] = '
     {type_legend},type;
-    {faq_legend},simplefaq_question,simplefaq_answer;
+    {simplefaq_legend},simplefaq_question,simplefaq_answer;
     {template_legend:hide},customTpl;
     {protected_legend:hide},protected;
     {expert_legend:hide},cssID;
