@@ -40,7 +40,7 @@ $GLOBALS['TL_DCA']['tl_content']['palettes'][SimplefaqStopController::TYPE] = '
 // Fields
 $GLOBALS['TL_DCA']['tl_content']['fields']['simplefaq_question'] = [
     'inputType' => 'text',
-    'eval'      => ['mandatory' => true, 'tl_class' => 'w50'],
+    'eval'      => ['mandatory' => true, 'tl_class' => 'w100'],
     'sql'       => "varchar(255) NOT NULL default ''"
 ];
 
