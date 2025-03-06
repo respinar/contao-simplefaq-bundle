@@ -2,7 +2,7 @@
 
 {% block content %}
     <div class="faq-item">
-        <h3 class="faq-question">{{ question }}</h3>
-        <div class="faq-answer"><p>{{ answer }}</p></div>
+        <h3 class="faq-question">{{ question|raw }}</h3>
+        <div class="faq-answer">{{ answer|raw }}</div>
     </div>
 {% endblock %}
