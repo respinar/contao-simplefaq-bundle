@@ -45,7 +45,6 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['simplefaq_question'] = [
 ];
 
 $GLOBALS['TL_DCA']['tl_content']['fields']['simplefaq_answer'] = [
-    'label'     => ['Answer', 'Enter the answer'],
     'inputType' => 'textarea',
     'eval'      => ['mandatory' => true, 'tl_class' => 'clr'],
     'sql'       => "text NULL"
