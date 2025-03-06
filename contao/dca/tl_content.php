@@ -39,7 +39,6 @@ $GLOBALS['TL_DCA']['tl_content']['palettes'][SimplefaqStopController::TYPE] = '
 
 // Fields
 $GLOBALS['TL_DCA']['tl_content']['fields']['simplefaq_question'] = [
-    'label'     => ['Question', 'Enter the question'],
     'inputType' => 'text',
     'eval'      => ['mandatory' => true, 'tl_class' => 'w50'],
     'sql'       => "varchar(255) NOT NULL default ''"
