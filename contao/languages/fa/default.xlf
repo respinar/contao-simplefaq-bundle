@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="fa" datatype="plaintext" original="default">
+        <body>
+            <trans-unit id="CTE.simplefaq">
+                <source>Simple FAQ</source>
+                <target>پرسش و پاسخ ساده</target>
+            </trans-unit>
+            <trans-unit id="CTE.simplefaq_start.0">
+                <source>FAQ Wrapper (Start)</source>
+                <target>پوشش پرسش و پاسخ (شروع)</target>
+            </trans-unit>
+            <trans-unit id="CTE.simplefaq_start.1">
+                <source>Start of an FAQ section</source>
+                <target>شروع بخش پرسش و پاسخ</target>
+            </trans-unit>
+            <trans-unit id="CTE.simplefaq_item.0">
+                <source>FAQ Item</source>
+                <target>مورد پرسش و پاسخ</target>
+            </trans-unit>
+            <trans-unit id="CTE.simplefaq_item.1">
+                <source>A single FAQ question and answer</source>
+                <target>یک سوال و پاسخ پرسش و پاسخ</target>
+            </trans-unit>
+            <trans-unit id="CTE.simplefaq_stop.0">
+                <source>FAQ Wrapper (Stop)</source>
+                <target>پوشش پرسش و پاسخ (پایان)</target>
+            </trans-unit>
+            <trans-unit id="CTE.simplefaq_stop.1">
+                <source>End of an FAQ section</source>
+                <target>پایان بخش پرسش و پاسخ</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
