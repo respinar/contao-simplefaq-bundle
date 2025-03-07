@@ -2,6 +2,10 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
     <file source-language="en" target-language="fa" datatype="plaintext" original="default">
         <body>
+            <trans-unit id="MSC.faqsimpletitle">
+                <source>Frequently asked question</source>
+                <target>سوالات متداول</target>
+            </trans-unit>
             <trans-unit id="CTE.simplefaq">
                 <source>Simple FAQ</source>
                 <target>پرسش و پاسخ ساده</target>
