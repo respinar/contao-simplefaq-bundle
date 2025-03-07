@@ -8,6 +8,7 @@ use Contao\ContentModel;
 use Contao\CoreBundle\Controller\ContentElement\AbstractContentElementController;
 use Contao\CoreBundle\DependencyInjection\Attribute\AsContentElement;
 use Contao\CoreBundle\Twig\FragmentTemplate;
+use Contao\System;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -35,10 +36,21 @@ class SimplefaqStopController extends AbstractContentElementController
     // Define the schema.org data
     public function getSchemaOrgData(): array
     {
+
+        global $objPage;
+
+        // Load translations from default.xlf
+        $translator = System::getContainer()->get('translator');
+        $faqPageName = $translator->trans('MSC.faqsimpletitle', [], 'contao_default');
+
+        // Use the translated name or fallback to the page title
+        $faqPageName = $objPage->title ?: ($faqPageName ?? 'FAQ');
+
         // Prepare the JSON-LD schema
         $schemaOrgData = [
             "@context" => "https://schema.org",
             "@type" => "FAQPage",
+            "name" => $faqPageName, // Localized FAQ page name
             "mainEntity" => $GLOBALS['FAQ_ITEMS'] ?? []
         ];
 
