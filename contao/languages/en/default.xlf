@@ -2,6 +2,9 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
     <file source-language="en" datatype="plaintext" original="default">
         <body>
+            <trans-unit id="MSC.faqsimpletitle">
+                <source>Frequently asked question</source>
+            </trans-unit>
             <trans-unit id="CTE.simplefaq">
                 <source>Simple FAQ</source>
             </trans-unit>
