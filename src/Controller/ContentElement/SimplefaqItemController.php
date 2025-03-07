@@ -27,10 +27,10 @@ class SimplefaqItemController extends AbstractContentElementController
 
         $GLOBALS['FAQ_ITEMS'][] = [
             "@type" => "Question",
-            "name" => $model->simplefaq_question,
+            "name" => strip_tags($model->simplefaq_question),
             "acceptedAnswer" => [
                 "@type" => "Answer",
-                "text" => $model->simplefaq_answer
+                "text" => strip_tags($model->simplefaq_answer)
             ]
         ];
 
