@@ -37,7 +37,7 @@ class SimplefaqStopController extends AbstractContentElementController
     public function getSchemaOrgData(): array
     {
 
-        global $objPage;
+        $objPage = $this->getPageModel();
 
         // Load translations from default.xlf
         $translator = System::getContainer()->get('translator');
